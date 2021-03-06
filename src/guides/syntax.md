@@ -420,3 +420,49 @@ f(a, b, c, d) // call.
 a ~ b // concatenation [T; M] ~ [T; N] -> [T; M + N]
 ```
 
+## Config Directives
+
+Depending on the output file format selected for the program, there are extra options that can be configured.
+
+```
+config {
+    option = value,
+    option = value,
+    option = value
+}
+```
+
+See Formats section for possible options.
+
+## Imports
+
+To include another file in the program, use `import` directives.
+
+```
+import "path";
+```
+
+The path is a string literal. This path is the name of the .wiz file, without its extension.
+
+Example:
+
+```
+import "nes";
+import "magic";
+```
+
+## Embeds
+
+To include a binary asset, use `embed` expressions.
+
+```
+embed "path"
+```
+
+The path passed to an `embed` should include the file extension. The contents of the embedded file are loaded into compiler memory and cached, and then inserted verbatim as a `[u8]` expression anywhere they are embedded.
+
+Example:
+
+```
+const data = embed "hero.chr";
+```

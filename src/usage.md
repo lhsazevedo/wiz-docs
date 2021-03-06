@@ -18,7 +18,7 @@ Arguments:
 
 Example invocation:
 
-```
+```sh
 wiz hello.wiz --system=6502 -o hello.nes
 ```
 

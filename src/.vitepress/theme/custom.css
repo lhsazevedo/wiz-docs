@@ -1,0 +1,39 @@
+/** Custom vars */
+:root {
+  --c-brand: #7f14e0;
+  --c-brand-light: #8a1fef;
+
+  --header-height: 4.375rem;
+}
+
+/** Custom styles */
+.home-hero img {
+  /* border-radius: 20px; */
+  width: 192px;
+  height: 192px;
+}
+
+.nav-bar .logo {
+  height: 30px;
+  margin-right: 2px;
+}
+
+.description {
+  max-width: 400px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.nav-bar {
+  background-color: var(--c-brand) !important;
+  /* padding: .7rem 30px !important; */
+  height: 4.375rem;
+}
+
+.nav-bar-title {
+  color: white !important;
+}
+
+.item {
+  color: white !important;
+}
