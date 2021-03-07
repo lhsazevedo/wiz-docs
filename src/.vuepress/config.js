@@ -22,15 +22,10 @@ module.exports = {
         children: [
           '/introduction',
           '/building-from-source',
-          '/usage',
+          '/using-wiz',
         ]
-      },
-      // '/introduction',
-      // '/building-from-source',
-      // '/usage',
-      // '/quick-guide',
-      {
-        title: 'Guides',
+      }, {
+        title: 'Language Guide',
         children: [
           '/guides/syntax',
           '/guides/types',
@@ -63,9 +58,9 @@ module.exports = {
         {
           id: 'wiz',
           scopeName: 'source.wiz',
-          path: './wiz.tmLanguage' // or `plist`
+          path: './wiz.tmLanguage'
         }
       ]
-    } // theme: TTheme
+    }
   }
 }
