@@ -17,12 +17,24 @@ module.exports = {
       // '/quick-guide',
       {
         title: 'Guides',
-        link: '/guides',
         children: [
           '/guides/syntax',
           '/guides/types',
           '/guides/functions-and-labels',
           '/guides/control-flow'
+        ]
+      }, {
+        title: 'Platforms',
+        children: [
+          '/platforms/mos-6502.md',
+          '/platforms/mos-65c02.md',
+          '/platforms/rockwell-65c02.md',
+          '/platforms/wdc-65c02.md',
+          '/platforms/huc-6280.md',
+          '/platforms/zilog-z80.md',
+          '/platforms/game-boy.md',
+          '/platforms/wdc-65816.md',
+          '/platforms/spc-700.md',
         ]
       }
     ]
