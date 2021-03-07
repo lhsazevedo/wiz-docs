@@ -424,7 +424,7 @@ a ~ b // concatenation [T; M] ~ [T; N] -> [T; M + N]
 
 Depending on the output file format selected for the program, there are extra options that can be configured.
 
-```
+```wiz
 config {
     option = value,
     option = value,
@@ -438,7 +438,7 @@ See Formats section for possible options.
 
 To include another file in the program, use `import` directives.
 
-```
+```wiz
 import "path";
 ```
 
@@ -446,7 +446,7 @@ The path is a string literal. This path is the name of the .wiz file, without it
 
 Example:
 
-```
+```wiz
 import "nes";
 import "magic";
 ```
@@ -455,7 +455,7 @@ import "magic";
 
 To include a binary asset, use `embed` expressions.
 
-```
+```wiz
 embed "path"
 ```
 
@@ -463,6 +463,6 @@ The path passed to an `embed` should include the file extension. The contents of
 
 Example:
 
-```
+```wiz
 const data = embed "hero.chr";
 ```

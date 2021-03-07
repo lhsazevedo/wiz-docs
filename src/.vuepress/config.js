@@ -7,13 +7,27 @@ module.exports = {
 
   themeConfig: {
     repo: 'wiz-lang/wiz',
-    // logo: '/logo2.png',
-    // search: true,
+    searchPlaceholder: 'Search',
+    
+    nav: [
+      {
+        text: 'Discord',
+        link: 'https://discord.gg/BKnTg7N'
+      },
+    ],
 
     sidebar: [
-      '/introduction',
-      '/building-source',
-      '/usage',
+      {
+        title: 'Getting Started',
+        children: [
+          '/introduction',
+          '/building-from-source',
+          '/usage',
+        ]
+      },
+      // '/introduction',
+      // '/building-from-source',
+      // '/usage',
       // '/quick-guide',
       {
         title: 'Guides',
@@ -26,17 +40,19 @@ module.exports = {
       }, {
         title: 'Platforms',
         children: [
-          '/platforms/mos-6502.md',
-          '/platforms/mos-65c02.md',
-          '/platforms/rockwell-65c02.md',
-          '/platforms/wdc-65c02.md',
-          '/platforms/huc-6280.md',
-          '/platforms/zilog-z80.md',
-          '/platforms/game-boy.md',
-          '/platforms/wdc-65816.md',
-          '/platforms/spc-700.md',
+          '/platforms/mos-6502',
+          '/platforms/mos-65c02',
+          '/platforms/rockwell-65c02',
+          '/platforms/wdc-65c02',
+          '/platforms/huc-6280',
+          '/platforms/zilog-z80',
+          '/platforms/game-boy',
+          '/platforms/wdc-65816',
+          '/platforms/spc-700',
         ]
-      }
+      },
+      '/formats',
+      '/contact',
     ]
   },
 

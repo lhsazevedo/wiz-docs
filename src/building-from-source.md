@@ -1,4 +1,4 @@
-# Building Source
+# Building From Source
 
 ## Building
 
